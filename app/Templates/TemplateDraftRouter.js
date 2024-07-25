@@ -135,22 +135,18 @@
 
 // export default TemplateDraftRouter;
 
-import React, { useEffect, useState, useContext } from 'react';
-import { View, Text, ActivityIndicator, Image, I18nManager, Platform } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { createStackNavigator } from '@react-navigation/stack';
+import Constants from 'expo-constants';
+import React, { useContext, useEffect, useState } from 'react';
+import { I18nManager, Platform, Text, View } from 'react-native';
 import { WebsiteDesignWorkPlaceContext } from '../WebsiteDesignWorkPlace/WebsiteDesignWorkPlaceContext';
 import { FetchingContext } from './FetchingContext/FetchingContext';
-import { createStackNavigator } from '@react-navigation/stack';
-import TemplateDraft from './TemplateDraft';
-import SpinnerButton from 'react-native-spinner-button';
-import generalstyles from './TabexComponents/GeneralFiles/Stylesheet/Stylesheet';
-import { icons, images, SIZES, COLORS, FONTS } from './TabexComponents/GeneralFiles/constants';
-import { currentOTAversion } from '../Env_Variables';
-import Constants from 'expo-constants';
-import { Splashlogos } from '../../AppIcons/index';
 import { LanguageContext } from './LanguageContext/LanguageContext';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { SIZES } from './TabexComponents/GeneralFiles/constants';
 import BottomTabs from './TabexComponents/StaticPages/BottomTabs/BottomTabs';
 import Addreview from './TabexComponents/StaticPages/Orderhistory/Addreview';
+import TemplateDraft from './TemplateDraft';
 
 // import { Restart } from 'fiction-expo-restart';
 import * as Updates from 'expo-updates';

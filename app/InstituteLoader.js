@@ -92,7 +92,7 @@ import generalstyles from './Templates/TabexComponents/GeneralFiles/Stylesheet/S
 import { icons, images, SIZES, COLORS, FONTS } from './Templates/TabexComponents/GeneralFiles/constants';
 import { currentOTAversion } from './Env_Variables';
 import Constants from 'expo-constants';
-import { Splashlogos } from '../AppIcons/index';
+// import { Splashlogos } from '../AppIcons/index';
 import { LanguageContext } from './Templates/LanguageContext/LanguageContext';
 
 const InstituteLoader = (props) => {
@@ -112,10 +112,10 @@ const InstituteLoader = (props) => {
                 <View style={[generalstyles.allcentered, { width: '100%', height: '100%', backgroundColor: Constants?.expoConfig?.splash?.backgroundColor, position: 'absolute', top: 0, left: 0 }]}>
                     {splashimage != null && (
                         <>
-                            {Constants?.expoConfig?.extra?.loadercontain != 'cover' && <Image source={Splashlogos[splashimage]} style={{ resizeMode: 'contain', width: '80%', height: '40%' }} />}
-                            {Constants?.expoConfig?.extra?.loadercontain == 'cover' && (
+                            {/* {Constants?.expoConfig?.extra?.loadercontain != 'cover' && <Image source={Splashlogos[splashimage]} style={{ resizeMode: 'contain', width: '80%', height: '40%' }} />} */}
+                            {/* {Constants?.expoConfig?.extra?.loadercontain == 'cover' && (
                                 <Image source={Splashlogos[splashimage]} style={{ resizeMode: 'cover', width: '100%', height: '100%', position: 'absolute' }} />
-                            )}
+                            )} */}
                             {/* <Text>Imag ehere{splashimage}</Text> */}
                         </>
                     )}
