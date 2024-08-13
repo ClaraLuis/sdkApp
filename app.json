@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "Grosr",
+    "slug": "grosrslug",
+    "scheme": "grosrscheme",
+    "version": "2.0",
+    "icon": "./AppIcons/grosr/grosr1024.png",
+    "orientation": "portrait",
+    "notification": {
+      "icon": "./AppIcons/grosr/grosr1024.png"
+    },
+    "splash": {
+      "image": "./AppIcons/grosr/grosr1024.png",
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.tabex.series.grosr",
+      "buildNumber": "2",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier email will be used to deliver personalized ads to you."
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "googleServicesFile": "./GoogleServicesJSONFiles/grosrapp-google-services.json",
+      "package": "com.tabex.series.grosrapp",
+      "icon": "./AppIcons/grosr/grosr512.png",
+      "versionCode": 2,
+      "permissions": [
+        "INTERNET",
+        "MODIFY_AUDIO_SETTINGS",
+        "READ_EXTERNAL_STORAGE",
+        "SYSTEM_ALERT_WINDOW",
+        "VIBRATE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./AppIcons/grosr/grosr512.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "description": "",
+    "extra": {
+      "instapikey": "65ea0f809344f",
+      "projectsrctype": "subdomain",
+      "hastrackingpermissions": "yes",
+      "iossdk": "49",
+      "androidsdk": "51",
+      "expoaccountwhoami": "tabexdevinfo24@gmail.com",
+      "firebaseaccount": "tabexdevinfo28@gmail.com",
+      "firebaseaccount2": "13tbdex@gmail.com",
+      "eas": {
+        "projectId": "11db3002-709c-4063-8d2c-87c34e46180b"
+      }
+    },
+    "plugins": [
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "This identifier email will be used to deliver personalized ads to you."
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/11db3002-709c-4063-8d2c-87c34e46180b"
+    }
+  }
+}
